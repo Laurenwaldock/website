@@ -1,0 +1,255 @@
+body {
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+
+}
+
+h1 {
+    font-size: 2rem;
+
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+p {
+    margin-bottom: 1.5em;
+    line-height: 1.5em;
+    font-size: 1.1em;
+
+
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.image1 {
+    width: 350px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 15px;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    float: right;
+
+}
+
+li {
+    display: inline;
+    float: left;
+}
+
+a {
+
+    padding: 8px;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.875em;
+    /* 30px/16=1.875em */
+    font-weight: bold;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    float: right;
+    color: grey;
+}
+
+.image2 {
+    border-radius: 6px;
+    height: auto;
+    max-width: 100%;
+    padding-bottom: 40px;
+    padding-top: 5px;
+}
+
+.text1 {}
+
+.image3 {
+    max-width: 100%;
+    flex-basis: 40%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 16px;
+
+}
+
+.wrapper {
+    display: grid;
+
+    /*    fr = fraction */
+    /*    grid-template-columns: repeat(12, 1fr);*/
+    grid-template-columns: repeat(12, 1fr);
+
+    /*    first number is height, second how big it can get */
+    /*    grid-auto-rows: minmax(100px, auto);*/
+
+    grid-column-gap: 5em;
+
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        ". . . m m m m m m . . ."
+        "f f f f f f f f f f f f"
+
+}
+
+.wrapper.home {
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        "g g g g g g g g g g g g"
+        "fr fr fr fr fr fr fr fr fr fr fr fr"
+        "sr sr sr sr sr sr sr sr sr sr sr sr"
+        "f f f f f f f f f f f f"
+}
+
+.wrapper.oldfestival {
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        ". . . m m m m m m . . ."
+        ". i i i i i i i i i i ."
+        "f f f f f f f f f f f f"
+}
+
+.header {
+    grid-area: h;
+}
+
+.gap {
+    grid-area: g;
+}
+
+.image-grid {
+    grid-area: i;
+}
+
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.firstrow {
+    grid-area: fr;
+}
+
+.secondrow {
+    grid-area: sr;
+}
+
+.col {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.main {
+    grid-area: m;
+    margin-bottom: 50px;
+}
+
+.big {
+    font-size: 200%;
+    margin: 5px;
+    display: inline-block;
+}
+
+.big a,
+.big a:visited {
+    text-decoration: none;
+    color: #fff;
+    background: #99cc00;
+    padding: 20px;
+}
+
+.big a:hover {
+    color: #9c0;
+    background: #000;
+}
+
+.about img {
+    float: left;
+    margin: 20px 20px 20px 0;
+    /*    TOP RIGHT BOTTOM LEFT*/
+    width: 40%;
+}
+
+.image-grid img {
+    width: 344px;
+    height: 344px;
+}
+
+.footer {
+    grid-area: f;
+    color: black;
+    max-width: 100%;
+    padding-top: 70px;
+    margin-bottom: 50px;
+
+    border-top: 1px solid #ccc;
+}
+
+footer p {
+    width: 70%;
+    text-align: center;
+
+    margin: 0 auto;
+
+}
+
+@media (max-width: 425px) {
+    ul {
+        float: none;
+
+    }
+
+    .image3 {
+        flex-basis: 100%;
+    }
+
+    .wrapper {
+        grid-template-areas:
+            "h h h h h h h h h h h h"
+            "m m m m m m m m m . . ."
+            "f f f f f f f f f f f f"
+    }
+
+
+}
