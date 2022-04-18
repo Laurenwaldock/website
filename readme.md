@@ -8,7 +8,7 @@ Within the final website, some of the low-fi ideas were implemented, the combina
 Some things that changed from the draft drawings were the layout of the arts in previous years -  I did want the art in a grid, ideally with some info about each, but this did not occur in the final website. The art is structured in a grid, but only 2 columns across and one column with the media queries. I also did not include information about each art piece.
 The layout of the about us page is also different, I changed this as more people on this original page needed to be included. Instead, I listed the photo next to their blurb cantered to the page, allowing viewers to scroll down.
 Most of these changes were due to the restrictions of my coding knowledge and the practicality of each element once on screen.
-<img src="assets/images/low-fi.JPG" alt="low-fi">
+<img src="assets/images/low-fi-drawing.JPG" alt="low-fi-drawing">
 References:
 https://floriadeaustralia.com/ - I enjoyed how the home page has been formatted. Not a major fan of the hamburger menu. 
 https://nga.gov.au/ - liked the slide up of the home page. Didn’t like how the art displayed in grids are not aligned or even. 
